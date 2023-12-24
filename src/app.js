@@ -1,7 +1,16 @@
 import express from "express";
 const app = express();
+import cors from "cors";
 import { user } from "./models/user.models.js";
 const expressData = () => {
+
+    app.use(cors());
+
+    corsOptions = {
+        origin: "*",
+        optionsSuccessStatus: 200,
+
+    };
 
     app.use(express.json());
     app.use(express.urlencoded({ extended: true }));
