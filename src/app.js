@@ -6,7 +6,7 @@ const expressData = () => {
 
     app.use(cors());
 
-    corsOptions = {
+    const corsOptions = {
         origin: "*",
         optionsSuccessStatus: 200,
 
